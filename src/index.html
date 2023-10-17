@@ -1,0 +1,497 @@
+<!doctype html>
+<html lang="en">
+
+<!--
+WRITTEN BY: Audrey Nguyen
+EMAIL: audrehn3@uci.edu
+-->
+
+<head>
+  <meta charset="utf-8">
+  <meta name="author" content="Audrey Nguyen">
+  <meta name="description" content="Personal Portfolio showcasing Audrey Nguyen's academic career!">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+  <!-- Bootstrap CSS Stylesheet -->
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet"
+    integrity="sha384-T3c6CoIi6uLrA9TneNEoa7RxnatzjcDSCmG1MXxSR1GAsXEV/Dwwykc2MPK8M2HN" crossorigin="anonymous">
+
+  <!-- Google Fonts -->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link
+    href="https://fonts.googleapis.com/css2?family=Abhaya+Libre:wght@800&family=Karla:wght@300&family=Yeseva+One&display=swap"
+    rel="stylesheet">
+
+  <!-- Google Icons -->
+  <link rel="stylesheet"
+    href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@24,400,0,0">
+
+  <!-- Font Awesoome Icons -->
+  <script src="https://kit.fontawesome.com/b4d50f2604.js" crossorigin="anonymous"></script>
+
+  <title>Audrey Nguyen</title>
+
+  <style>
+    html,
+    body {
+      height: 100%;
+      margin: 0;
+      padding: 0;
+      background-color: #DEDBD2;
+    }
+
+    /* For large screens, make pfp pic smaller*/
+    @media (min-width: 992px) {
+      .custom-max-height {
+        max-height: 75%;
+      }
+    }
+
+    /* For medium screens, make pfp pic bigger*/
+    @media (max-width: 991px) {
+      .custom-max-height {
+        max-height: 90%;
+        height: 300px;
+      }
+    }
+
+    /* For smaller screens, make pfp pic smaller*/
+    @media (max-width: 414px) {
+      .custom-max-height {
+        max-height: 90%;
+        height: 200px;
+      }
+    }
+
+    /* For smaller screens, make header text smaller*/
+    @media (max-width: 414px) {
+      .responsive-header {
+        font-size: 1rem;
+      }
+    }
+
+    /* For medium screens and smaller, make title smaller */
+    @media (max-width: 1051px) {
+      .responsive-title {
+        font-size: 3rem;
+      }
+    }
+
+    /* For larger screens, make title smaller */
+    @media (min-width: 992px) {
+      .responsive-title {
+        font-size: 4rem;
+      }
+    }
+
+    /* For larger screens, add more padding & margin */
+    @media (min-width: 820px) and (max-width: 1023px) {
+      .push-down {
+        padding-bottom: 3rem;
+        margin-bottom: 3rem;
+      }
+    }
+
+    /* Hover effect for down arrow */
+    #scroll-down:hover {
+      /* Scaling factor */
+      transform: scale(1.3);
+      /* How fast the transform is */
+      transition: transform 0.5s ease;
+    }
+
+    /* Hover and fill effect for cards */
+    #card1:hover {
+      cursor: pointer;
+      transform: scale(1.03);
+      transition: all 0.5s ease;
+    }
+
+    #card2:hover {
+      cursor: pointer;
+      transform: scale(1.03);
+      transition: all 0.5s ease;
+    }
+
+    #card3:hover {
+      cursor: pointer;
+      transform: scale(1.03);
+      transition: all 0.5s ease;
+    }
+
+    #card4:hover {
+      cursor: pointer;
+      transform: scale(1.03);
+      transition: all 0.5s ease;
+    }
+
+    #card5:hover {
+      cursor: pointer;
+      transform: scale(1.03);
+      transition: all 0.5s ease;
+    }
+
+    /* Hover and fill effect for filters */
+    #filter1:hover {
+      cursor: pointer;
+      transform: scale(1.04);
+      transition: all 0.5s ease;
+    }
+
+    #filter2:hover {
+      cursor: pointer;
+      transform: scale(1.04);
+      transition: all 0.5s ease;
+    }
+
+    #filter3:hover {
+      cursor: pointer;
+      transform: scale(1.04);
+      transition: all 0.5s ease;
+    }
+
+    #filter4:hover {
+      cursor: pointer;
+      transform: scale(1.04);
+      transition: all 0.5s ease;
+    }
+  </style>
+</head>
+
+
+
+<body>
+  <!-- Header contains Name and "Contact Me" navigation -->
+  <div class="container" style="max-width: 100%; max-height: 100%;">
+    <div class="row pt-3 px-3 align-items-center d-flex justify-content-between push-down">
+      <div class="col-lg-6 col-md-3 col-8" style="font-family: 'Abhaya Libre'; color: #4A5759; font-size: 1.5rem">
+        <p class="text-left responsive-header">Audrey Nguyen</p>
+      </div>
+      <div class="col-lg-6 col-md-2 col-4 text-end display-7" style="font-family: 'Karla'; color: #4A5759;">
+        <p class="text-right responsive-header" id="contact-me">Contact Me</p>
+      </div>
+    </div>
+  </div>
+
+  <!-- Name, Bio, Profile Pic w/ alt text, and Button redirecting to Resume file-->
+  <div class="container-fluid d-flex align-items-center justify-content-center">
+    <div class="row justify-content-center py-5 mb-5">
+
+      <div
+        class="col-lg-3 col-md-12 col-sm-12 d-flex align-items-center justify-content-center order-lg-last order-md-first order-sm-last">
+        <img src="../public/pfp_pic_circle.png"
+          alt="Professional headshot of Audrey Nguyen, she is wearing a pink blouse with greenery in the background."
+          class="img-fluid custom-max-height" style="max-width: 85%; object-fit: contain;">
+      </div>
+
+      <div class="col-lg-5 col-md-6 col-sm-8 mx-5 my-5">
+        <div class="responsive-title" style="color: #4A5759; font-family: Abhaya Libre;">
+          Audrey Nguyen
+        </div>
+
+        <div class="col-lg-10 col-md-12 col-sm-8 mt-4" style="font-family: 'Karla'; color: #4A5759;">Hi, I'm Audrey! I'm
+          a Junior pursuing my Bachelor of Science in Computer Science at UC Irvine, with a prospective graduation date
+          of June, 2024. I am cultivating my interests in full-stack development, data science, and machine learning. I
+          enjoy participating in hackathons during my free time, and exploring the intersection between data science and
+          learning analytics through research.</div>
+
+        <div class="pt-4">
+          <button class="btn" id="view-resume"
+            style="font-family: 'Karla'; color: #4A5759; background-color: #C9D4BD; border: 1px solid #B2B7AB; border-radius: 20px;">View
+            Resume</button>
+        </div>
+
+      </div>
+
+
+    </div>
+  </div>
+
+  <!-- Down arrow where on click scrolls down to next section -->
+  <div class="container-fluid d-flex justify-content-center fixed-bottom">
+    <div class="row">
+      <div class="pb-5" id="down-arrow">
+        <span class="material-symbols-outlined" style="color: #4A5759; font-size: 2rem" id="scroll-down">
+          expand_more
+        </span>
+      </div>
+    </div>
+  </div>
+
+  <!-- Header and Filter Buttons to navigate content -->
+  <section>
+    <div class="container mt-5 pt-5" id="content">
+      <div class="pt-5 mt-1 pb-5 mb-4" id="filters">
+        <div class="d-flex justify-content-center pb-4 text-center"
+          style="font-family: 'Abhaya Libre'; color: #4A5759; font-size: 2rem">Explore what I did in the last two
+          years!
+        </div>
+
+        <div class="btn-toolbar justify-content-center" role="toolbar">
+          <div id="filter1">
+            <button class="btn px-5 pt-2 mx-2 mb-3" id="education"
+              style="font-size: 1.1rem; font-family: 'Karla'; color: #4A5759; background-color: #C9D4BD; border: 1px solid #B2B7AB; border-radius: 20px;">Education</button>
+          </div>
+          <div id="filter2">
+            <button class="btn px-5 pt-2 mx-2 mb-3" id="projects"
+              style="font-size: 1.1rem; font-family: 'Karla'; color: #4A5759; background-color: #7F9F81; border: 1px solid #B2B7AB; border-radius: 20px;">Projects</button>
+          </div>
+          <div id="filter3">
+            <button class="btn px-5 pt-2 mx-2 mb-3" id="experience"
+              style="font-size: 1.1rem; font-family: 'Karla'; color: #4A5759; background-color: #C9D4BD; border: 1px solid #B2B7AB; border-radius: 20px;">Experience</button>
+          </div>
+          <div id="filter4">
+            <button class="btn px-5 pt-2 mx-2 mb-3" id="research"
+              style="font-size: 1.1rem; font-family: 'Karla'; color: #4A5759; background-color: #C9D4BD; border: 1px solid #B2B7AB; border-radius: 20px;">Research</button>
+          </div>
+        </div>
+
+      </div>
+    </div>
+  </section>
+
+  <!-- Cards grid with icon, title, short description, and arrow -->
+  <section id="cards">
+    <div class="container pb-5 mb-5">
+      <div class="row row-cols-lg-4 row-cols-md-3 row-cols-sm-2 row-cols-1 g-4">
+
+        <div class="col">
+          <div class="card h-100" style="border-radius: 20px; background-color: #C9D4BD; border: 1px solid #B2B7AB;"
+            id="card1">
+            <img src="../public/rheia_thumbnail.png" class="card-img-top"
+              style="object-fit: cover; border-radius: 20px 20px 0 0; height: 200px; object-position: bottom left;"
+              alt="Form to input patient information in Rheia application">
+            <div class="card-body d-flex flex-column" id="card-body">
+              <div>
+                <h5 class="card-title p-2" style="font-family: 'Abhaya Libre'; color: #4A5759; font-size: 1.8rem"
+                  id="card-title"> Rheia</h5>
+                <p class="card-text px-2 pb-5" style="font-family: 'Karla'; color: #4A5759;" id="card-text">Novel
+                  solution to STI early intervention and contact tracing with data-driven healthcare application.</p>
+              </div>
+              <span class="material-symbols-outlined px-2 mt-auto" style="color: #4A5759;">
+                trending_flat
+              </span>
+            </div>
+          </div>
+        </div>
+
+        <div class="col">
+          <div class="card h-100" style="border-radius: 20px; background-color: #C9D4BD; border: 1px solid #B2B7AB;"
+            id="card2">
+            <div id="mischief-in-montreal">
+              <img src="../public/mischief_in_montreal_thumbnail.jpg" class="card-img-top"
+                style="object-fit: cover; border-radius: 20px 20px 0 0; height: 200px; object-position: top;"
+                alt="Time series line graph for crime rates in Montreal">
+              <div class="card-body d-flex flex-column">
+                <div>
+                  <h5 class="card-title p-2" style="font-family: 'Abhaya Libre'; color: #4A5759; font-size: 1.8rem">
+                    Mischief in Montreal</h5>
+                  <p class="card-text px-2 pb-5 mb-4" style="font-family: 'Karla'; color: #4A5759;">Utilized data
+                    analytics & machine learning to develop policies for Montreal criminal landscape.</p>
+                </div>
+                <span class="material-symbols-outlined px-2 mt-auto" style="color: #4A5759;">
+                  trending_flat
+                </span>
+              </div>
+            </div>
+
+          </div>
+        </div>
+
+        <div class="col">
+          <div class="card h-100" style="border-radius: 20px; background-color: #C9D4BD; border: 1px solid #B2B7AB;"
+            id="card3">
+            <img src="../public/skincare.io_thumbnail.png" class="card-img-top"
+              style="object-fit: cover; border-radius: 20px 20px 0 0; height: 200px; object-position: top left;"
+              alt="Dashboard for skincare.io displaying various skincare recommendations.">
+            <div class="card-body d-flex flex-column">
+              <div>
+                <h5 class="card-title p-2" style="font-family: 'Abhaya Libre'; color: #4A5759; font-size: 1.8rem">
+                  skincare.io</h5>
+                <p class="card-text px-2 pb-5" style="font-family: 'Karla'; color: #4A5759;">Innovative solution to
+                  skincare recommendations; generates comprehensive routines based on user skin type & goals.</p>
+              </div>
+              <span class="material-symbols-outlined px-2 mt-auto" style="color: #4A5759;">
+                trending_flat
+              </span>
+            </div>
+          </div>
+        </div>
+
+        <div class="col">
+          <div class="card h-100" style="border-radius: 20px; background-color: #C9D4BD; border: 1px solid #B2B7AB;"
+            id="card4">
+            <img src="../public/zothome_thumbnail.png" class="card-img-top"
+              style="object-fit: cover; border-radius: 20px 20px 0 0; height: 200px; object-position: top left;"
+              alt="ACC housing listing and map of ACC communities for ZotHome application.">
+            <div class="card-body d-flex flex-column">
+              <div>
+                <h5 class="card-title p-2" style="font-family: 'Abhaya Libre'; color: #4A5759; font-size: 1.8rem">
+                  ZotHome</h5>
+                <p class="card-text px-2 pb-5" style="font-family: 'Karla'; color: #4A5759;">Intuitive mobile app for
+                  ACC housing listings with filtering capabilities, map view, and up-to-date database.</p>
+              </div>
+              <span class="material-symbols-outlined px-2 mt-auto" style="color: #4A5759;">
+                trending_flat
+              </span>
+            </div>
+          </div>
+        </div>
+
+        <div class="col">
+          <div class="card h-100" style="border-radius: 20px; background-color: #C9D4BD; border: 1px solid #B2B7AB;"
+            id="card5">
+            <img src="../public/commutrcourse_thumbnail.jpeg" class="card-img-top"
+              style="object-fit: cover; border-radius: 20px 20px 0 0; height: 200px; object-position: top left;"
+              alt="Commutr Course dashboard with schedule recommendation containing course information.">
+            <div class="card-body d-flex flex-column">
+              <div>
+                <h5 class="card-title p-2" style="font-family: 'Abhaya Libre'; color: #4A5759; font-size: 1.8rem">
+                  Commutr Course</h5>
+                <p class="card-text px-2 pb-5" style="font-family: 'Karla'; color: #4A5759;">User-centric schedule
+                  creator for UCI commuters based on days and hours spent on campus.</p>
+              </div>
+              <span class="material-symbols-outlined px-2 mt-auto" style="color: #4A5759;">
+                trending_flat
+              </span>
+            </div>
+          </div>
+        </div>
+
+      </div>
+    </div>
+  </section>
+
+  <!-- Contacts -->
+  <div class="container pt-5 mt-5">
+    <div class="row">
+      <div class="btn-toolbar justify-content-center" role="toolbar" id="contacts">
+        <em class="fa-solid fa-envelope mx-2" style="color: #4a5759; font-size: 2rem;" id="email"></em>
+        <em class="fa-brands fa-linkedin mx-2" style="color: #4a5759; font-size: 2rem;" id="linkedin"></em>
+        <em class="fa-brands fa-github mx-2" style="color: #4a5759; font-size: 2rem;" id="github"></em>
+        <emi class="fa-solid fa-file mx-2" style="color: #4a5759; font-size: 2rem;" id="resume"></em>
+      </div>
+    </div>
+  </div>
+
+  <!-- Footer section -->
+  <footer>
+    <div class="d-flex justify-content-center my-4">
+      <p style="font-family: 'Karla'; color: #4A5759;">Designed & Made with ♡ by Audrey Nguyen @2023</p>
+    </div>
+  </footer>
+
+
+  <!-- JS function where on click of "Contact Me" in header, scrolls automatically to contacts -->
+  <script>
+    document.addEventListener("DOMContentLoaded", function () {
+      // Get a reference to the scroll icon
+      var scrollIcon = document.getElementById("contact-me");
+
+      // Get a reference to the target section
+      var sectionToScroll = document.getElementById("contacts");
+
+      // Add a click event listener to the scroll icon
+      scrollIcon.addEventListener("click", function (event) {
+        event.preventDefault(); // Prevent the default anchor behavior
+
+        // Scroll to the target section smoothly
+        sectionToScroll.scrollIntoView({ behavior: "smooth" });
+      });
+    });
+  </script>
+
+  <!-- JS function to redirect to resume file -->
+  <script>
+    document.getElementById('view-resume').addEventListener('click', function () {
+      const filePath = '../public/resume_Nguyen_Audrey.pdf';
+
+      window.open(filePath, '_blank');
+    });
+  </script>
+
+  <!-- JS function where on scroll down, icon disappears & main content gets displayed -->
+  <script>
+    window.addEventListener('scroll', function () {
+      var bottomContainer = document.getElementById('scroll-down');
+      var icon = document.getElementById('down-arrow');
+      var scrollY = window.scrollY || window.pageYOffset;
+
+      if (scrollY > 1) {
+        icon.style.display = 'none';      // Hide icon when scroll down
+      } else {
+        icon.style.display = 'block'; // Show icon when near top
+      }
+    });
+  </script>
+
+  <!-- JS function where on click of down arrow, scrolls automatically to filters -->
+  <script>
+    document.addEventListener("DOMContentLoaded", function () {
+      // Get a reference to the scroll icon
+      var scrollIcon = document.getElementById("scroll-down");
+
+      // Get a reference to the target section
+      var sectionToScroll = document.getElementById("filters");
+
+      // Add a click event listener to the scroll icon
+      scrollIcon.addEventListener("click", function (event) {
+        event.preventDefault(); // Prevent the default anchor behavior
+
+        // Scroll to the target section smoothly
+        sectionToScroll.scrollIntoView({ behavior: "smooth" });
+      });
+    });
+  </script>
+
+  <!-- JS function to redirect linkedin, email, github, and resume -->
+  <script>
+    document.getElementById('linkedin').addEventListener('click', function () {
+      const filePath = 'http://www.linkedin.com/in/audreyngyn';
+      window.open(filePath, '_blank');
+    });
+  </script>
+
+  <script>
+    document.getElementById('email').addEventListener('click', function () {
+      const filePath = 'mailto:hoangsa9898@gmail.com';
+      window.open(filePath, '_blank');
+    });
+  </script>
+
+  <script>
+    document.getElementById('github').addEventListener('click', function () {
+      const filePath = 'https://github.com/aud-dreams';
+      window.open(filePath, '_blank');
+    });
+  </script>
+
+  <script>
+    document.getElementById('resume').addEventListener('click', function () {
+      const filePath = '../public/resume_Nguyen_Audrey.pdf';
+      window.open(filePath, '_blank');
+    });
+  </script>
+
+  <!-- JS function to redirect to project page (Mischief in Montreal) -->
+  <script>
+    document.getElementById('mischief-in-montreal').addEventListener('click', function () {
+      const newPageUrl = 'mischief_in_montreal.html';
+      window.location.href = newPageUrl;
+    });
+  </script>
+
+
+  <!-- Bootstrap JavaScript Bundle -->
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js"
+    integrity="sha384-C6RzsynM9kWDrMNeT87bh95OGNyZPhcTNXj1NW7RuBCsyN/o0jlpcV8Qyq46cDfL"
+    crossorigin="anonymous"></script>
+</body>
+
+
+
+
+
+
+</html>
