@@ -11,7 +11,6 @@ EMAIL: audrehn3@uci.edu
   <meta name="author" content="Audrey Nguyen">
   <meta name="description" content="Personal Portfolio showcasing Audrey Nguyen's academic career!">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-
   <!-- Bootstrap CSS Stylesheet -->
   <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet"
     integrity="sha384-T3c6CoIi6uLrA9TneNEoa7RxnatzjcDSCmG1MXxSR1GAsXEV/Dwwykc2MPK8M2HN" crossorigin="anonymous">
@@ -29,9 +28,7 @@ EMAIL: audrehn3@uci.edu
 
   <!-- Font Awesoome Icons -->
   <script src="https://kit.fontawesome.com/b4d50f2604.js" crossorigin="anonymous"></script>
-
   <title>Audrey Nguyen</title>
-
   <style>
     html,
     body {
@@ -39,6 +36,13 @@ EMAIL: audrehn3@uci.edu
       margin: 0;
       padding: 0;
       background-color: #DEDBD2;
+    }
+
+    a {
+      text-decoration:none; 
+      color: #4A5759; 
+      scroll-behavior: smooth;
+      cursor: pointer;
     }
 
     /* For large screens, make pfp pic smaller*/
@@ -169,7 +173,7 @@ EMAIL: audrehn3@uci.edu
         <p class="text-left responsive-header">Audrey Nguyen</p>
       </div>
       <div class="col-lg-6 col-md-2 col-4 text-end display-7" style="font-family: 'Karla'; color: #4A5759;">
-        <p class="text-right responsive-header" id="contact-me">Contact Me</p>
+        <a href="#contacts" class="text-right responsive-header" id="contact-me">Contact Me</a>
       </div>
     </div>
   </div>
@@ -198,8 +202,11 @@ EMAIL: audrehn3@uci.edu
 
         <div class="pt-4">
           <button class="btn" id="view-resume"
-            style="font-family: 'Karla'; color: #4A5759; background-color: #C9D4BD; border: 1px solid #B2B7AB; border-radius: 20px;">View
-            Resume</button>
+            style="font-family: 'Karla'; color: #4A5759; background-color: #C9D4BD; border: 1px solid #B2B7AB; border-radius: 20px;">
+            <a href="resume_Nguyen_Audrey.pdf" target="_blank">
+              View Resume
+            </a>
+          </button>
         </div>
 
       </div>
@@ -275,7 +282,7 @@ EMAIL: audrehn3@uci.edu
             </div>
           </div>
         </div>
-
+        <a href="mischief_in_montreal.html">
         <div class="col" id="mischief-in-montreal">
           <div class="card h-100" style="border-radius: 20px; background-color: #C9D4BD; border: 1px solid #B2B7AB;"
             id="card2">
@@ -296,7 +303,7 @@ EMAIL: audrehn3@uci.edu
 
           </div>
         </div>
-
+      </a>
         <div class="col">
           <div class="card h-100" style="border-radius: 20px; background-color: #C9D4BD; border: 1px solid #B2B7AB;"
             id="card3">
@@ -362,13 +369,13 @@ EMAIL: audrehn3@uci.edu
   </section>
 
   <!-- Contacts -->
-  <div class="container pt-5 mt-5">
+  <div id="contacts" class="container pt-5 mt-5">
     <div class="row">
       <div class="btn-toolbar justify-content-center" role="toolbar" id="contacts">
-        <em class="fa-solid fa-envelope mx-2" style="color: #4a5759; font-size: 2rem;" id="email"></em>
-        <em class="fa-brands fa-linkedin mx-2" style="color: #4a5759; font-size: 2rem;" id="linkedin"></em>
-        <em class="fa-brands fa-github mx-2" style="color: #4a5759; font-size: 2rem;" id="github"></em>
-        <emi class="fa-solid fa-file mx-2" style="color: #4a5759; font-size: 2rem;" id="resume"></em>
+        <a href="mailto:hoangsa9898@gmail.com" target="_blank"> <em class="fa-solid fa-envelope mx-2" style="color: #4a5759; font-size: 2rem;" id="email"></em> </a>
+        <a href="http://www.linkedin.com/in/audreyngyn" target="_blank"> <em class="fa-brands fa-linkedin mx-2" style="color: #4a5759; font-size: 2rem;" id="linkedin"></em> </a>
+        <a href="https://github.com/aud-dreams" target="_blank"> <em class="fa-brands fa-github mx-2" style="color: #4a5759; font-size: 2rem;" id="github"></em> </a>
+        <a href="resume_Nguyen_Audrey.pdf" target="_blank"> <emi class="fa-solid fa-file mx-2" style="color: #4a5759; font-size: 2rem;" id="resume"></em> </a>
       </div>
     </div>
   </div>
@@ -379,35 +386,6 @@ EMAIL: audrehn3@uci.edu
       <p style="font-family: 'Karla'; color: #4A5759;">Designed & Made with ♡ by Audrey Nguyen @2023</p>
     </div>
   </footer>
-
-
-  <!-- JS function where on click of "Contact Me" in header, scrolls automatically to contacts -->
-  <script>
-    document.addEventListener("DOMContentLoaded", function () {
-      // Get a reference to the scroll icon
-      var scrollIcon = document.getElementById("contact-me");
-
-      // Get a reference to the target section
-      var sectionToScroll = document.getElementById("contacts");
-
-      // Add a click event listener to the scroll icon
-      scrollIcon.addEventListener("click", function (event) {
-        event.preventDefault(); // Prevent the default anchor behavior
-
-        // Scroll to the target section smoothly
-        sectionToScroll.scrollIntoView({ behavior: "smooth" });
-      });
-    });
-  </script>
-
-  <!-- JS function to redirect to resume file -->
-  <script>
-    document.getElementById('view-resume').addEventListener('click', function () {
-      const filePath = 'resume_Nguyen_Audrey.pdf';
-
-      window.open(filePath, '_blank');
-    });
-  </script>
 
   <!-- JS function where on scroll down, icon disappears & main content gets displayed -->
   <script>
@@ -442,44 +420,6 @@ EMAIL: audrehn3@uci.edu
       });
     });
   </script>
-
-  <!-- JS function to redirect linkedin, email, github, and resume -->
-  <script>
-    document.getElementById('linkedin').addEventListener('click', function () {
-      const filePath = 'http://www.linkedin.com/in/audreyngyn';
-      window.open(filePath, '_blank');
-    });
-  </script>
-
-  <script>
-    document.getElementById('email').addEventListener('click', function () {
-      const filePath = 'mailto:hoangsa9898@gmail.com';
-      window.open(filePath, '_blank');
-    });
-  </script>
-
-  <script>
-    document.getElementById('github').addEventListener('click', function () {
-      const filePath = 'https://github.com/aud-dreams';
-      window.open(filePath, '_blank');
-    });
-  </script>
-
-  <script>
-    document.getElementById('resume').addEventListener('click', function () {
-      const filePath = 'resume_Nguyen_Audrey.pdf';
-      window.open(filePath, '_blank');
-    });
-  </script>
-
-  <!-- JS function to redirect to project page (Mischief in Montreal) -->
-  <script>
-    document.getElementById('mischief-in-montreal').addEventListener('click', function () {
-      const newPageUrl = 'mischief_in_montreal.html';
-      window.location.href = newPageUrl;
-    });
-  </script>
-
 
   <!-- Bootstrap JavaScript Bundle -->
   <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js"
