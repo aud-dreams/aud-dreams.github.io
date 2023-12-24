@@ -39,6 +39,12 @@ EMAIL: audrehn3@uci.edu
             padding: 0;
             background-color: #C9D4BD;
         }
+        a {
+            text-decoration:none; 
+            color: #4A5759; 
+            scroll-behavior: smooth;
+            cursor: pointer;
+        }
     </style>
 </head>
 
@@ -53,7 +59,7 @@ EMAIL: audrehn3@uci.edu
                 <p class="text-left">Audrey Nguyen</p>
             </div>
             <div class="col-lg-6 col-md-6 col-sm-2 text-end display-7" style="font-family: 'Karla'; color: #4A5759;">
-                <p class="text-right" id="contact-me">Contact Me</p>
+                <a href="#contacts" class="text-right" id="contact-me">Contact Me</p> </a>
             </div>
         </div>
     </div>
@@ -63,10 +69,10 @@ EMAIL: audrehn3@uci.edu
         <div class="container">
             <div class="row justify-content-evenly pt-5">
                 <div class="col-lg-8 col-md-8 col-sm-8 mx-5">
-                    <span class="material-symbols-outlined px-2 mt-auto pb-3" style="color: #4A5759; font-size: 2.5rem;"
+                    <a href="index.html" class="material-symbols-outlined px-2 mt-auto pb-3" style="color: #4A5759; font-size: 2.5rem;"
                         id="go-back">
                         west
-                    </span>
+                    </a>
 
                     <h2 class="display-3" style="font-family: 'Abhaya Libre'; color: #4A5759;">Mischief in Montreal</h2>
 
@@ -106,10 +112,10 @@ EMAIL: audrehn3@uci.edu
     <div class="container pt-5 mt-5">
         <div class="row">
             <div class="btn-toolbar justify-content-center" role="toolbar" id="contacts">
-                <em class="fa-solid fa-envelope mx-2" style="color: #4a5759; font-size: 2rem;" id="email"></em>
-                <em class="fa-brands fa-linkedin mx-2" style="color: #4a5759; font-size: 2rem;" id="linkedin"></em>
-                <em class="fa-brands fa-github mx-2" style="color: #4a5759; font-size: 2rem;" id="github"></em>
-                <emi class="fa-solid fa-file mx-2" style="color: #4a5759; font-size: 2rem;" id="resume"></em>
+                <a href="mailto:hoangsa9898@gmail.com" target="_blank"> <em class="fa-solid fa-envelope mx-2" style="color: #4a5759; font-size: 2rem;" id="email"></em> </a>
+                <a href="http://www.linkedin.com/in/audreyngyn" target="_blank"> <em class="fa-brands fa-linkedin mx-2" style="color: #4a5759; font-size: 2rem;" id="linkedin"></em> </a>
+                <a href="https://github.com/aud-dreams" target="_blank"> <em class="fa-brands fa-github mx-2" style="color: #4a5759; font-size: 2rem;" id="github"></em> </a>
+                <a href="resume_Nguyen_Audrey.pdf" target="_blank"> <emi class="fa-solid fa-file mx-2" style="color: #4a5759; font-size: 2rem;" id="resume"></em> </a>
             </div>
         </div>
     </div>
@@ -121,72 +127,6 @@ EMAIL: audrehn3@uci.edu
             <p style="font-family: 'Karla'; color: #4A5759;">Designed & Made with ♡ by Audrey Nguyen @2023</p>
         </div>
     </footer>
-
-    <!-- JS function where on click of back arrow, go back to home page -->
-    <script>
-        document.getElementById('go-back').addEventListener('click', function () {
-            const newPageUrl = 'index.html';
-            window.location.href = newPageUrl;
-        });
-    </script>
-
-
-    <!-- JS function where on click of "Contact Me" in header, scrolls automatically to contacts -->
-    <script>
-        document.addEventListener("DOMContentLoaded", function () {
-            // Get a reference to the scroll icon
-            var scrollIcon = document.getElementById("contact-me");
-
-            // Get a reference to the target section
-            var sectionToScroll = document.getElementById("contacts");
-
-            // Add a click event listener to the scroll icon
-            scrollIcon.addEventListener("click", function (event) {
-                event.preventDefault(); // Prevent the default anchor behavior
-
-                // Scroll to the target section smoothly
-                sectionToScroll.scrollIntoView({ behavior: "smooth" });
-            });
-        });
-    </script>
-
-    <!-- JS function to redirect linkedin, email, github, and resume -->
-    <script>
-        document.getElementById('linkedin').addEventListener('click', function () {
-            const filePath = 'http://www.linkedin.com/in/audreyngyn';
-            window.open(filePath, '_blank');
-        });
-    </script>
-
-    <script>
-        document.getElementById('email').addEventListener('click', function () {
-            const filePath = 'mailto:hoangsa9898@gmail.com';
-            window.open(filePath, '_blank');
-        });
-    </script>
-
-    <script>
-        document.getElementById('github').addEventListener('click', function () {
-            const filePath = 'https://github.com/aud-dreams';
-            window.open(filePath, '_blank');
-        });
-    </script>
-
-    <script>
-        document.getElementById('resume').addEventListener('click', function () {
-            const filePath = '/resume_Nguyen_Audrey.pdf';
-            window.open(filePath, '_blank');
-        });
-    </script>
-
-    <!-- JS function to redirect to project page (Mischief in Montreal) -->
-    <script>
-        document.getElementById('mischief-in-montreal').addEventListener('click', function () {
-            const newPageUrl = 'mischief_in_montreal.html';
-            window.location.href = newPageUrl;
-        });
-    </script>
-
 
     <!-- Bootstrap JavaScript Bundle -->
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js"
