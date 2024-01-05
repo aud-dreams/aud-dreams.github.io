@@ -1,0 +1,37 @@
+{
+    "Rheia": {
+        "thumbnail": "images/rheia_thumbnail.png",
+        "title": "Rheia",
+        "description": "Novel solution to STI early intervention and contact tracing with data-driven healthcare application.",
+        "skills": "Python • Scikit-learn • Flask",
+        "link": "https://tinyurl.com/y3wd8h8p"
+    },
+    "Mischief in Montreal": {
+        "thumbnail": "images/mischief_in_montreal_thumbnail.jpg",
+        "title": "Mischief in Montreal",
+        "description": "Utilized data analytics & machine learning to develop policies for Montreal criminal landscape.",
+        "skills": "Python • Keras • Scikit-learn • TensorFlow • Pandas • Matplotlib • Seaborn • Plotly • Deepnote",
+        "link": "https://devpost.com/software/mischief-in-montreal"
+    },
+    "skincare.io": {
+        "thumbnail": "images/skincare.io_thumbnail.png",
+        "title": "skincare.io",
+        "description": "Innovative solution to skincare recommendations; generates comprehensive routines based on user skin type & goals.",
+        "skills": "React • Next.js • Typescript • Webscraping • Puppeteer • Tailwind CSS • PostgreSQL • Postman • HTML • Cloudflare • DigitalOcean • Git",
+        "link": "https://devpost.com/software/skincare-io"
+    },
+    "ZotHome": {
+        "thumbnail": "images/zothome_thumbnail.png",
+        "title": "ZotHome",
+        "description": "Intuitive mobile app for ACC housing listings with filtering capabilities, map view, and up-to-date database.",
+        "skills": "Python • React-native • Expo • PostgreSQL • Vercel • Redux • Flatline • Webscraping • CockroachDB • Axios • Mapbox API",
+        "link": "https://devpost.com/software/zothome"
+    },
+    "Commutr Course": {
+        "thumbnail": "images/commutrcourse_thumbnail.jpeg",
+        "title": "Commutr Course",
+        "description": "User-centric schedule creator for UCI commuters based on days and hours spent on campus.",
+        "skills": "React • Javascript • CSS • PeterPortal API • Git",
+        "links": "https://devpost.com/software/petr-planner"
+    }
+}
