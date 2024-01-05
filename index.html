@@ -107,37 +107,6 @@ EMAIL: audrehn3@uci.edu
       transition: transform 0.5s ease;
     }
 
-    /* Hover and fill effect for cards */
-    #card1:hover {
-      cursor: pointer;
-      transform: scale(1.03);
-      transition: all 0.5s ease;
-    }
-
-    #card2:hover {
-      cursor: pointer;
-      transform: scale(1.03);
-      transition: all 0.5s ease;
-    }
-
-    #card3:hover {
-      cursor: pointer;
-      transform: scale(1.03);
-      transition: all 0.5s ease;
-    }
-
-    #card4:hover {
-      cursor: pointer;
-      transform: scale(1.03);
-      transition: all 0.5s ease;
-    }
-
-    #card5:hover {
-      cursor: pointer;
-      transform: scale(1.03);
-      transition: all 0.5s ease;
-    }
-
     /* Hover and fill effect for filters */
     #filter1:hover {
       cursor: pointer;
@@ -161,6 +130,11 @@ EMAIL: audrehn3@uci.edu
       cursor: pointer;
       transform: scale(1.04);
       transition: all 0.5s ease;
+    }
+
+    /* Card flip effect */
+    .card:hover {
+      transform: rotateY(180deg);
     }
   </style>
 </head>
@@ -203,12 +177,13 @@ EMAIL: audrehn3@uci.edu
           intersection between data science and learning analytics through research.</div>
 
         <div class="pt-4">
-          <button class="btn" id="view-resume"
-            style="font-family: 'Karla'; color: #4A5759; background-color: #C9D4BD; border: 1px solid #B2B7AB; border-radius: 20px;">
-            <a href="resume_Nguyen_Audrey.pdf" target="_blank">
+          <a href="resume_Nguyen_Audrey.pdf" target="_blank">
+            <button class="btn" id="view-resume"
+              style="font-family: 'Karla'; color: #4A5759; background-color: #C9D4BD; border: 1px solid #B2B7AB; border-radius: 20px;">
               View Resume
-            </a>
-          </button>
+            </button>
+          </a>
+
         </div>
 
       </div>
@@ -266,17 +241,66 @@ EMAIL: audrehn3@uci.edu
       <div class="row row-cols-lg-4 row-cols-md-3 row-cols-sm-2 row-cols-1 g-4">
 
         <div class="col">
+          <div class="card h-100"
+            style="border-radius: 20px; background-color: #C9D4BD; border: 1px solid #B2B7AB; position: relative; transform-style: preserve-3d; transition: all 0.8s ease;"
+            id="card1" onclick="flip()">
+
+            <div class="front"
+              style="position: absolute; height: 100%; width: 100%; backface-visibility: hidden; overflow: hidden; transform: rotateY(0deg);">
+              <img src="images/rheia_thumbnail.png" class="card-img-top"
+                style="object-fit: cover; border-radius: 20px 20px 0 0; height: 200px; object-position: bottom left;"
+                alt="Form to input patient information in Rheia application">
+              <div class="card-body d-flex flex-column" id="card-body">
+                <div>
+                  <h5 class="card-title p-2" style="font-family: 'Abhaya Libre'; color: #4A5759; font-size: 1.8rem"
+                    id="card-title"> Rheia</h5>
+                  <p class="card-text px-2 pb-5" style="font-family: 'Karla'; color: #4A5759;" id="card-text">Novel
+                    solution to STI early intervention and contact tracing with data-driven healthcare application.</p>
+                </div>
+                <span class="material-symbols-outlined px-2 mt-auto" style="color: #4A5759;">
+                  trending_flat
+                </span>
+              </div>
+            </div>
+
+            <div class="back"
+              style="position: absolute; height: 100%; width: 100%; backface-visibility: hidden; overflow: hidden; transform: rotateY(180deg);">
+              <div class="card-body d-flex flex-column" id="card-body" style="height: 100%; width: 100%;">
+                <p class="card-title p-2" style="font-family: 'Karla'; color: #4A5759; font-size: 1.4rem"
+                  id="card-title"> Python • Pandas • Scikit-learn • Seaborn • Matplotlib • Deepnote • Flask • Svelte •
+                  Javascript • Typescript • HTML • Tailwind CSS</p>
+                <div class="mt-auto">
+                  <a href="https://tinyurl.com/y3wd8h8p" target="_blank">
+                    <button class="btn mb-2"
+                      style="font-family: 'Karla'; color: #4A5759; border: 1px solid #B2B7AB; border-radius: 20px; width: 100%;">Data
+                      Notebook
+                    </button>
+                  </a>
+                  <a href="https://github.com/kylerchin/sti-hacks-frontend" target="_blank">
+                    <button class="btn"
+                      style="font-family: 'Karla'; color: #4A5759; border: 1px solid #B2B7AB; border-radius: 20px; width: 100%;">Github
+                    </button>
+                  </a>
+                </div>
+
+
+              </div>
+
+            </div>
+          </div>
+        </div>
+        <div class="col" id="mischief-in-montreal">
           <div class="card h-100" style="border-radius: 20px; background-color: #C9D4BD; border: 1px solid #B2B7AB;"
-            id="card1">
-            <img src="images/rheia_thumbnail.png" class="card-img-top"
-              style="object-fit: cover; border-radius: 20px 20px 0 0; height: 200px; object-position: bottom left;"
-              alt="Form to input patient information in Rheia application">
-            <div class="card-body d-flex flex-column" id="card-body">
+            id="card2">
+            <img src="images/mischief_in_montreal_thumbnail.jpg" class="card-img-top"
+              style="object-fit: cover; border-radius: 20px 20px 0 0; height: 200px; object-position: top;"
+              alt="Time series line graph for crime rates in Montreal">
+            <div class="card-body d-flex flex-column">
               <div>
-                <h5 class="card-title p-2" style="font-family: 'Abhaya Libre'; color: #4A5759; font-size: 1.8rem"
-                  id="card-title"> Rheia</h5>
-                <p class="card-text px-2 pb-5" style="font-family: 'Karla'; color: #4A5759;" id="card-text">Novel
-                  solution to STI early intervention and contact tracing with data-driven healthcare application.</p>
+                <h5 class="card-title p-2" style="font-family: 'Abhaya Libre'; color: #4A5759; font-size: 1.8rem">
+                  Mischief in Montreal</h5>
+                <p class="card-text px-2 pb-5 mb-4" style="font-family: 'Karla'; color: #4A5759;">Utilized data
+                  analytics & machine learning to develop policies for Montreal criminal landscape.</p>
               </div>
               <span class="material-symbols-outlined px-2 mt-auto" style="color: #4A5759;">
                 trending_flat
@@ -284,28 +308,6 @@ EMAIL: audrehn3@uci.edu
             </div>
           </div>
         </div>
-        <a href="mischief_in_montreal.html">
-          <div class="col" id="mischief-in-montreal">
-            <div class="card h-100" style="border-radius: 20px; background-color: #C9D4BD; border: 1px solid #B2B7AB;"
-              id="card2">
-              <img src="images/mischief_in_montreal_thumbnail.jpg" class="card-img-top"
-                style="object-fit: cover; border-radius: 20px 20px 0 0; height: 200px; object-position: top;"
-                alt="Time series line graph for crime rates in Montreal">
-              <div class="card-body d-flex flex-column">
-                <div>
-                  <h5 class="card-title p-2" style="font-family: 'Abhaya Libre'; color: #4A5759; font-size: 1.8rem">
-                    Mischief in Montreal</h5>
-                  <p class="card-text px-2 pb-5 mb-4" style="font-family: 'Karla'; color: #4A5759;">Utilized data
-                    analytics & machine learning to develop policies for Montreal criminal landscape.</p>
-                </div>
-                <span class="material-symbols-outlined px-2 mt-auto" style="color: #4A5759;">
-                  trending_flat
-                </span>
-              </div>
-
-            </div>
-          </div>
-        </a>
         <div class="col">
           <div class="card h-100" style="border-radius: 20px; background-color: #C9D4BD; border: 1px solid #B2B7AB;"
             id="card3">
