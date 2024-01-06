@@ -1,0 +1,16 @@
+{
+    "University of California, Irvine": {
+        "thumbnail": "../images/uci_thumbnail.jpg",
+        "title": "University of California, Irvine",
+        "description": "Relevant Coursework: Machine Learning and Data-Mining, Design & Analysis of Algorithms, Intro to Artificial Intelligence, Data Structure Implementation & Analysis, Intro to Data Management, Discrete Mathematics, Linear Algebra",
+        "tag": "Bachelor of Computer Science",
+        "link": "https://ics.uci.edu/"
+    },
+    "FVHS": {
+        "thumbnail": "../images/fvhs_thumbnail.jpg",
+        "title": "Fountain Valley High School",
+        "description": "Relevant Coursework: AP Computer Science A, AP Calculus BC, AP English Literature and Composition",
+        "tag": "Graduated Summa Cum Laude",
+        "link": "https://www.fvhs.com/"
+    }
+}

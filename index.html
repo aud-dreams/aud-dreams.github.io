@@ -100,31 +100,7 @@ EMAIL: audrehn3@uci.edu
     }
 
     /* Hover effect for cards */
-    #card1:hover {
-      cursor: pointer;
-      transform: scale(1.03);
-      transition: all 0.5s ease;
-    }
-
-    #card2:hover {
-      cursor: pointer;
-      transform: scale(1.03);
-      transition: all 0.5s ease;
-    }
-
-    #card3:hover {
-      cursor: pointer;
-      transform: scale(1.03);
-      transition: all 0.5s ease;
-    }
-
-    #card4:hover {
-      cursor: pointer;
-      transform: scale(1.03);
-      transition: all 0.5s ease;
-    }
-
-    #card5:hover {
+    #card:hover {
       cursor: pointer;
       transform: scale(1.03);
       transition: all 0.5s ease;
@@ -139,25 +115,7 @@ EMAIL: audrehn3@uci.edu
     }
 
     /* Hover and fill effect for filters */
-    #filter1:hover {
-      cursor: pointer;
-      transform: scale(1.04);
-      transition: all 0.5s ease;
-    }
-
-    #filter2:hover {
-      cursor: pointer;
-      transform: scale(1.04);
-      transition: all 0.5s ease;
-    }
-
-    #filter3:hover {
-      cursor: pointer;
-      transform: scale(1.04);
-      transition: all 0.5s ease;
-    }
-
-    #filter4:hover {
+    .button:hover {
       cursor: pointer;
       transform: scale(1.04);
       transition: all 0.5s ease;
@@ -174,7 +132,7 @@ EMAIL: audrehn3@uci.edu
       <div class="col-lg-6 col-md-3 col-8" style="font-family: 'Abhaya Libre'; color: #4A5759; font-size: 1.5rem">
         <p class="text-left responsive-header">Audrey Nguyen</p>
       </div>
-      <div class="col-lg-6 col-md-2 col-4 text-end display-7" style="font-family: 'Karla'; color: #4A5759;">
+      <div class="col-lg-6 col-md-2 col-4 text-end display-7 mb-3" style="font-family: 'Karla'; color: #4A5759;">
         <a href="#contacts" class="text-right responsive-header" id="contact-me">Contact Me</a>
       </div>
     </div>
@@ -204,7 +162,7 @@ EMAIL: audrehn3@uci.edu
 
         <div class="pt-4">
           <a href="resume_Nguyen_Audrey.pdf" target="_blank">
-            <button class="btn" id="view-resume"
+            <button class="btn button" id="view-resume"
               style="font-family: 'Karla'; color: #4A5759; background-color: #C9D4BD; border: 1px solid #B2B7AB; border-radius: 20px;">
               View Resume
             </button>
@@ -230,29 +188,32 @@ EMAIL: audrehn3@uci.edu
 
   <!-- Header and Filter Buttons to navigate content -->
   <section>
-    <div class="container mt-5 pt-5" id="content">
+    <div class="container" id="content">
       <div class="pt-5 mt-1 pb-5 mb-4" id="filters">
         <div class="d-flex justify-content-center pb-4 text-center"
-          style="font-family: 'Abhaya Libre'; color: #4A5759; font-size: 2rem">Explore what I did in the last two
-          years!
+          style="font-family: 'Abhaya Libre'; color: #4A5759; font-size: 2rem">Explore what I did in the last two years!
         </div>
 
         <div class="btn-toolbar justify-content-center" role="toolbar">
-          <div id="filter1">
+          <div class="button">
             <button class="btn px-5 pt-2 mx-2 mb-3" id="education"
-              style="font-size: 1.1rem; font-family: 'Karla'; color: #4A5759; background-color: #C9D4BD; border: 1px solid #B2B7AB; border-radius: 20px;">Education</button>
+              style="font-size: 1.1rem; font-family: 'Karla'; color: #4A5759; background-color: #7F9F81; border: 1px solid #B2B7AB; border-radius: 20px;"
+              onclick="load(id)">Education</button>
           </div>
-          <div id="filter2">
+          <div class="button">
             <button class="btn px-5 pt-2 mx-2 mb-3" id="projects"
-              style="font-size: 1.1rem; font-family: 'Karla'; color: #4A5759; background-color: #7F9F81; border: 1px solid #B2B7AB; border-radius: 20px;">Projects</button>
+              style="font-size: 1.1rem; font-family: 'Karla'; color: #4A5759; background-color: #C9D4BD; border: 1px solid #B2B7AB; border-radius: 20px;"
+              onclick="load(id)">Projects</button>
           </div>
-          <div id="filter3">
+          <div class="button">
             <button class="btn px-5 pt-2 mx-2 mb-3" id="experience"
-              style="font-size: 1.1rem; font-family: 'Karla'; color: #4A5759; background-color: #C9D4BD; border: 1px solid #B2B7AB; border-radius: 20px;">Experience</button>
+              style="font-size: 1.1rem; font-family: 'Karla'; color: #4A5759; background-color: #C9D4BD; border: 1px solid #B2B7AB; border-radius: 20px;"
+              onclick="load(id)">Experience</button>
           </div>
-          <div id="filter4">
+          <div class="button">
             <button class="btn px-5 pt-2 mx-2 mb-3" id="research"
-              style="font-size: 1.1rem; font-family: 'Karla'; color: #4A5759; background-color: #C9D4BD; border: 1px solid #B2B7AB; border-radius: 20px;">Research</button>
+              style="font-size: 1.1rem; font-family: 'Karla'; color: #4A5759; background-color: #C9D4BD; border: 1px solid #B2B7AB; border-radius: 20px;"
+              onclick="load(id)">Research</button>
           </div>
         </div>
 
@@ -261,114 +222,9 @@ EMAIL: audrehn3@uci.edu
   </section>
 
   <!-- Cards grid with icon, title, short description, and arrow -->
-  <section id="cards">
+  <section class="pb-5" id="cards">
     <div class="container pb-5 mb-5">
-      <div class="row row-cols-lg-4 row-cols-md-3 row-cols-sm-2 row-cols-1 g-4">
-
-        <div class="col">
-          <a href="https://tinyurl.com/y3wd8h8p" target="_blank">
-            <div class="card h-100" style="border-radius: 20px; background-color: #C9D4BD; border: 1px solid #B2B7AB;"
-              id="card1">
-              <img src="images/rheia_thumbnail.png" class="card-img-top"
-                style="object-fit: cover; border-radius: 20px 20px 0 0; height: 200px; object-position: bottom left;"
-                alt="Form to input patient information in Rheia application">
-              <div class="card-body d-flex flex-column" id="card-body">
-                <div>
-                  <h5 class="card-title px-1 pt-1"
-                    style="font-family: 'Abhaya Libre'; color: #4A5759; font-size: 1.8rem" id="card-title">Rheia</h5>
-                  <p class="card-text px-2" style="font-family: 'Karla'; color: #4A5759;" id="card-tags"><b>Python •
-                      Scikit-learn • Flask</b></p>
-                  <p class="card-text px-2 pb-5" style="font-family: 'Karla'; color: #4A5759;" id="card-text">Novel
-                    solution to STI early intervention and contact tracing with data-driven healthcare application.</p>
-                </div>
-                <span class="material-symbols-outlined px-2 mt-auto" style="color: #4A5759;">
-                  trending_flat
-                </span>
-              </div>
-            </div>
-          </a>
-        </div>
-
-        <div class="col" id="mischief-in-montreal">
-          <div class="card h-100" style="border-radius: 20px; background-color: #C9D4BD; border: 1px solid #B2B7AB;"
-            id="card2">
-            <img src="images/mischief_in_montreal_thumbnail.jpg" class="card-img-top"
-              style="object-fit: cover; border-radius: 20px 20px 0 0; height: 200px; object-position: top;"
-              alt="Time series line graph for crime rates in Montreal">
-            <div class="card-body d-flex flex-column">
-              <div>
-                <h5 class="card-title p-2" style="font-family: 'Abhaya Libre'; color: #4A5759; font-size: 1.8rem">
-                  Mischief in Montreal</h5>
-                <p class="card-text px-2 pb-5 mb-4" style="font-family: 'Karla'; color: #4A5759;">Utilized data
-                  analytics & machine learning to develop policies for Montreal criminal landscape.</p>
-              </div>
-              <span class="material-symbols-outlined px-2 mt-auto" style="color: #4A5759;">
-                trending_flat
-              </span>
-            </div>
-          </div>
-        </div>
-        <div class="col">
-          <div class="card h-100" style="border-radius: 20px; background-color: #C9D4BD; border: 1px solid #B2B7AB;"
-            id="card3">
-            <img src="images/skincare.io_thumbnail.png" class="card-img-top"
-              style="object-fit: cover; border-radius: 20px 20px 0 0; height: 200px; object-position: top left;"
-              alt="Dashboard for skincare.io displaying various skincare recommendations.">
-            <div class="card-body d-flex flex-column">
-              <div>
-                <h5 class="card-title p-2" style="font-family: 'Abhaya Libre'; color: #4A5759; font-size: 1.8rem">
-                  skincare.io</h5>
-                <p class="card-text px-2 pb-5" style="font-family: 'Karla'; color: #4A5759;">Innovative solution to
-                  skincare recommendations; generates comprehensive routines based on user skin type & goals.</p>
-              </div>
-              <span class="material-symbols-outlined px-2 mt-auto" style="color: #4A5759;">
-                trending_flat
-              </span>
-            </div>
-          </div>
-        </div>
-
-        <div class="col">
-          <div class="card h-100" style="border-radius: 20px; background-color: #C9D4BD; border: 1px solid #B2B7AB;"
-            id="card4">
-            <img src="images/zothome_thumbnail.png" class="card-img-top"
-              style="object-fit: cover; border-radius: 20px 20px 0 0; height: 200px; object-position: top left;"
-              alt="ACC housing listing and map of ACC communities for ZotHome application.">
-            <div class="card-body d-flex flex-column">
-              <div>
-                <h5 class="card-title p-2" style="font-family: 'Abhaya Libre'; color: #4A5759; font-size: 1.8rem">
-                  ZotHome</h5>
-                <p class="card-text px-2 pb-5" style="font-family: 'Karla'; color: #4A5759;">Intuitive mobile app for
-                  ACC housing listings with filtering capabilities, map view, and up-to-date database.</p>
-              </div>
-              <span class="material-symbols-outlined px-2 mt-auto" style="color: #4A5759;">
-                trending_flat
-              </span>
-            </div>
-          </div>
-        </div>
-
-        <div class="col">
-          <div class="card h-100" style="border-radius: 20px; background-color: #C9D4BD; border: 1px solid #B2B7AB;"
-            id="card5">
-            <img src="images/commutrcourse_thumbnail.jpeg" class="card-img-top"
-              style="object-fit: cover; border-radius: 20px 20px 0 0; height: 200px; object-position: top left;"
-              alt="Commutr Course dashboard with schedule recommendation containing course information.">
-            <div class="card-body d-flex flex-column">
-              <div>
-                <h5 class="card-title p-2" style="font-family: 'Abhaya Libre'; color: #4A5759; font-size: 1.8rem">
-                  Commutr Course</h5>
-                <p class="card-text px-2 pb-5" style="font-family: 'Karla'; color: #4A5759;">User-centric schedule
-                  creator for UCI commuters based on days and hours spent on campus.</p>
-              </div>
-              <span class="material-symbols-outlined px-2 mt-auto" style="color: #4A5759;">
-                trending_flat
-              </span>
-            </div>
-          </div>
-        </div>
-
-      </div>
+      <div class=" row row-cols-lg-4 row-cols-md-3 row-cols-sm-2 row-cols-1 g-4" id="card-container"></div>
     </div>
   </section>
 
@@ -406,7 +262,7 @@ EMAIL: audrehn3@uci.edu
       if (scrollY > 1) {
         icon.style.display = 'none';      // Hide icon when scroll down
       } else {
-        icon.style.display = 'block'; // Show icon when near top
+        icon.style.display = 'block';     // Show icon when near top
       }
     });
   </script>
@@ -414,20 +270,96 @@ EMAIL: audrehn3@uci.edu
   <!-- JS function where on click of down arrow, scrolls automatically to filters -->
   <script>
     document.addEventListener("DOMContentLoaded", function () {
-      // Get a reference to the scroll icon
       var scrollIcon = document.getElementById("scroll-down");
-
-      // Get a reference to the target section
       var sectionToScroll = document.getElementById("filters");
-
-      // Add a click event listener to the scroll icon
       scrollIcon.addEventListener("click", function (event) {
         event.preventDefault(); // Prevent the default anchor behavior
-
-        // Scroll to the target section smoothly
         sectionToScroll.scrollIntoView({ behavior: "smooth" });
       });
     });
+  </script>
+
+  <!-- JS function to fetch content & populate cards -->
+  <script>
+    function load(filter) {
+      // set file path based on filter
+      let file;
+      switch (filter) {
+        case "education":
+          file = "content/education.json";
+          break;
+        case "projects":
+          file = "content/projects.json";
+          break;
+        case "experience":
+          file = "content/experience.json";
+          break;
+        case "research":
+          file = "content/research.json";
+          break;
+      }
+
+      // fill buttons
+      const filters = ["education", "projects", "experience", "research"];
+      for (const f of filters) {
+        const button = document.getElementById(f);
+        button.style.backgroundColor = "#C9D4BD";
+      }
+      const pressedButton = document.getElementById(filter);
+      pressedButton.style.backgroundColor = "#7F9F81";
+
+      // fetch content & populate cards
+      fetch(file)
+        .then((res) => {
+          return res.json();
+        })
+        .then((data) => {
+          const container = document.getElementById("card-container");
+          container.innerHTML = "";
+
+          for (const name in data) {
+            const item = data[name];
+            // create card element for each item in json
+            const card = document.createElement('div');
+            card.className = 'col';
+
+            // create link element
+            const link = document.createElement('a');
+            link.href = item.link;
+            link.target = '_blank';
+
+            // create card structure
+            const cardContent = `
+              <div class="card h-100" style="border-radius: 20px; background-color: #C9D4BD; border: 1px solid #B2B7AB;"
+                id="card">
+                <img src="${item.thumbnail}" class="card-img-top"
+                  style="object-fit: cover; border-radius: 20px 20px 0 0; height: 200px; object-position: bottom left;">
+                <div class="card-body d-flex flex-column">
+                  <div>
+                    <h5 class="card-title px-1 pt-1"
+                      style="font-family: 'Abhaya Libre'; color: #4A5759; font-size: 1.8rem">${item.title}</h5>
+                    <p class="card-text px-2" style="font-family: 'Karla'; color: #4A5759;" id="card-tags"><b>${item.tag}</b></p>
+                    <p class="card-text px-2 pb-5" style="font-family: 'Karla'; color: #4A5759;">${item.description}</p>
+                  </div>
+                  <span class="material-symbols-outlined px-2 mt-auto" style="color: #4A5759;">
+                    trending_flat
+                  </span>
+                </div>
+              </div>
+            `;
+
+            link.innerHTML = cardContent;
+            card.appendChild(link);
+
+            container.appendChild(card);
+          };
+        });
+    }
+  </script>
+
+  <!-- JS function to load Education cards by default -->
+  <script>
+    document.addEventListener("DOMContentLoaded", load("education"));
   </script>
 
   <!-- Bootstrap JavaScript Bundle -->
