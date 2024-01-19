@@ -1,0 +1,16 @@
+{
+    "OAI1": {
+        "thumbnail": "../images/oai_logo.jpg",
+        "title": "Office of Outreach, Access, and Inclusion",
+        "description": "Design, update, and facilitate maintenance of OAI sites. Compile meaningful resources and circulate a weekly newsletter for an audience of nearly 100 transfer students in the S-STEM Pathways to Engineering Collaborative, a program funded by the National Science Foundation to increase retention for underrepresented minorities.",
+        "tag": "Web Administrator",
+        "link": "https://oai.tech.uci.edu/"
+    },
+    "OAI2": {
+        "thumbnail": "../images/oai_thumbnail.jpg",
+        "title": "Office of Outreach, Access, and Inclusion",
+        "description": "Instructed five summer programs and collaborated with colleagues to develop material on Raspberry Pi, Python, R, & Onshape for 100+ middle to college level students with underrepresented backgrounds. Provided guidance, mentorship, and a sense of community; fostered equity, opportunity, and a love for STEM.",
+        "tag": "Student Assistant",
+        "link": "https://oai.tech.uci.edu/"
+    }
+}

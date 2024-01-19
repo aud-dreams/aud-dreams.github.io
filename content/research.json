@@ -1,0 +1,30 @@
+{
+    "DDL": {
+        "thumbnail": "../images/dll_logo.png",
+        "title": "Digital Learning Lab",
+        "description": "PapyrusAI is a pedagogical-informed AI writing platform that ensures accessible and permitted use of AI for hundreds of undergraduates in engineering writing courses. I will assist in the development of large language models with Amazon Bedrock through fine-tuning, retrieval-augmented generation, and automated scoring. I will also mentor CP-LEADS fellows from the next cohort.",
+        "tag": "Advisors: Tamara Tate, PhD. and Daniel Ritchie, PhD Student",
+        "link": "https://www.digitallearninglab.org/"
+    },
+    "SURP": {
+        "thumbnail": "../images/daplab_logo.png",
+        "title": "Design and Partnership Lab | SURP",
+        "description": "Pioneered an interdisciplinary and cross-institutional research project to develop a Phocrastination, a novel game-based assessment designed to assess procrastination. Implemented a rigorous learning analytics game design process, developed a fully-functional game on Unity with commissioned art in one summer, convenience-sampled and conducted a pilot study of 80 participants, and analyzed and achieved predictive validity.",
+        "tag": "Advisors: June Ahn, PhD. and John Lopez, PhD Student",
+        "link": "https://www.daplab.education.uci.edu/"
+    },
+    "UROP": {
+        "thumbnail": "../images/daplab_logo.png",
+        "title": "Design and Partnership Lab | UROP",
+        "description": "With a focus on predictive learning analytics, used machine learning to validate Fraction Ball: Exactly, a game-based assessment designed to evaluate the development of executive function in children. Contributed to data cleaning, feature selection, creation of Support Vector Machine models, and analyzing their performance within the context of pilot study.",
+        "tag": "Advisors: June Ahn, PhD. and John Lopez, PhD Student",
+        "link": "https://www.daplab.education.uci.edu/"
+    },
+    "CPLEADS": {
+        "thumbnail": "../images/cpleads_logo.png",
+        "title": "Career Pathways for Research in Learning, Education, Analytics, & Data Science",
+        "description": "Accepted into the inaugural cohort of the year-long fellowship from the UCI School of Education to increase pathways into doctoral programs. Developed proficiency in Research Methods, Machine Learning, Data Science, Learning Analytics, and Game Development with independent research projects.",
+        "tag": "Advisors: June Ahn, PhD. and Fernando Rodriguez, PhD.",
+        "link": "https://sites.uci.edu/cpleads/"
+    }
+}
