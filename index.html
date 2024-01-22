@@ -47,10 +47,14 @@ EMAIL: audrehn3@uci.edu
       cursor: pointer;
     }
 
+    #pfp {
+      transition: transform 0.5s;
+    }
+
     /* LARGE SCREENS */
     @media (min-width: 1024px) {
       .pfp-height {
-        height: 350px;
+        height: 380px;
       }
 
       .responsive-title {
@@ -124,6 +128,20 @@ EMAIL: audrehn3@uci.edu
       }
     }
 
+    /* PUSH DOWN */
+    @media (min-width: 1200px) {
+      .push-down {
+        padding-bottom: 85px;
+      }
+    }
+
+    @media (min-width: 2200px) {
+      .push-down {
+        padding-bottom: 180px;
+      }
+    }
+
+
     /* Hover effect for cards */
     #card:hover {
       cursor: pointer;
@@ -169,8 +187,7 @@ EMAIL: audrehn3@uci.edu
 
       <div
         class="col-lg-3 medium col-sm-4 d-flex align-items-center justify-content-center order-lg-last order-md-first order-sm-last">
-        <img src="images/pfp_pic_circle.png"
-          alt="Professional headshot of Audrey Nguyen, she is wearing a pink blouse with greenery in the background."
+        <img src="images/pfp-audrey.png" id="pfp" onmouseover="changeImage()" onmouseout="restoreImage()"
           class="img-fluid pfp-height" style="max-width: 75%; object-fit: contain;">
       </div>
 
@@ -183,7 +200,7 @@ EMAIL: audrehn3@uci.edu
           Hi, I'm Audrey! I'm a Junior pursuing my Bachelor of Science in Computer Science at UC Irvine, with a
           specialization in intelligent systems. I am cultivating my interests in full-stack development, data
           science, and machine learning. I enjoy participating in hackathons during my free time, and exploring the
-          intersection between learning analytics and gamification through EdTech research.</div>
+          intersection between learning analytics and gamification through EdTech research. ₍ᐢ. ༝ .ᐢ₎</div>
 
         <div class="pt-4">
           <a href="Curriculum Vitae_AudreyNguyen.pdf" target="_blank">
@@ -247,7 +264,7 @@ EMAIL: audrehn3@uci.edu
   </section>
 
   <!-- Cards grid with icon, title, short description, and arrow -->
-  <section class="pb-5" id="cards">
+  <section class="push-down" id="cards">
     <div class="container pb-5">
       <div class="row row-cols-lg-4 row-cols-md-3 row-cols-sm-2 row-cols-1 g-4" id="card-container"></div>
     </div>
@@ -385,6 +402,17 @@ EMAIL: audrehn3@uci.edu
   <!-- JS function to load Education cards by default -->
   <script>
     document.addEventListener("DOMContentLoaded", load("education"));
+  </script>
+
+  <!-- JS function to switch pfp pics -->
+  <script>
+    function changeImage() {
+      document.getElementById('pfp').src = 'images/pfp-miffy.png';
+    }
+
+    function restoreImage() {
+      document.getElementById('pfp').src = 'images/pfp-audrey.png';
+    }
   </script>
 
   <!-- Bootstrap JavaScript Bundle -->
