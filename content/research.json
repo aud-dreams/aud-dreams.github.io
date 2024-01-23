@@ -2,29 +2,29 @@
     "DDL": {
         "thumbnail": "../images/papyrusai.png",
         "title": "Incorporating Generative Artificial Intelligence in Engineering Writing Courses",
-        "description": "<i>PapyrusAI</i> is a pedagogical-informed AI writing platform that ensures accessible use of AI for hundreds of undergraduates. Will assist in the development of large language models with Amazon Bedrock through fine-tuning, retrieval-augmented generation, and automated scoring.",
-        "tag": "Advisors: Tamara Tate, PhD. and Daniel Ritchie, PhD Student",
+        "description": "<i>PapyrusAI</i> is a pedagogical-informed AI writing platform that ensures accessible use of AI for hundreds of undergraduates. <br><br>Assisting in the development of large language models with Amazon Bedrock through fine-tuning, retrieval-augmented generation, and automated scoring.",
+        "tag": "OpenAI API • AWS • NLP",
         "link": "https://www.digitallearninglab.org/genai.html"
     },
     "SURP": {
         "thumbnail": "../images/phocrastination.png",
         "title": "Phocrastination: A Game-Based Approach to Assessing and Classifying Academic Procrastination in College Students",
-        "description": "Pioneered an interdisciplinary and cross-institutional initiative to develop <i>Phocrastination</i>, a game-based assessment to assess procrastination in college students. Implemented a rigorous learning analytics design process, developed a fully-functional game on Unity, conducted a pilot study of 80 participants, and achieved predictive validity.",
-        "tag": "Advisors: June Ahn, PhD. and John Lopez, PhD Student",
+        "description": "Interdisciplinary and cross-institutional initiative to develop <i>Phocrastination</i>, a game-based assessment to assess procrastination in college students. <br><br>Implemented a rigorous learning analytics design process, developed the game on Unity, conducted a pilot study of 80 participants, and achieved predictive validity.",
+        "tag": "Scikit-Learn • Unity • C#",
         "link": "https://deepnote.com/@phocrastination/Phocrastination-A-Game-Based-Approach-to-Assessing-and-Classifying-Academic-Procrastination-in-College-Students-ed4c6348-2dd9-4c3d-a855-1ba17ef84ccb"
     },
     "UROP": {
         "thumbnail": "../images/fbe.png",
         "title": "Classifying Planning Skills in Children with Machine Learning",
-        "description": "<i>Fraction Ball: Exactly</i> is a game-based assessment designed to evaluate the development of executive function in children. Contributed to data cleaning, feature selection, creation of Support Vector Machine models, and analyzing their performance within the context of pilot study.",
-        "tag": "Advisors: June Ahn, PhD. and John Lopez, PhD Student",
-        "link": "https://deepnote.com/workspace/aud_dreams-b3016973-c849-4423-b573-71fc4a8d6a7b/project/UROP-b22c459f-a4e2-4762-abe1-419ec96c9360/notebook/SVM%20Model%20(eff_acc%20%26%20acc)-e8b93e93ca54409dbb8e73bb49991b40"
+        "description": "<i>Fraction Ball: Exactly</i> is a game-based assessment designed to evaluate the development of executive function in children. <br><br>Contributed to the assessment's predictive validity through data cleaning, feature selection, and creation of Support Vector Machine models.",
+        "tag": "Scikit-Learn • Python • Matplotlib",
+        "link": "https://deepnote.com/@aud_dreams/UROP-b22c459f-a4e2-4762-abe1-419ec96c9360"
     },
     "CPLEADS": {
         "thumbnail": "../images/cpleads_logo.png",
         "title": "Career Pathways for Research in Learning, Education, Analytics, & Data Science",
-        "description": "Accepted into the inaugural cohort of the year-long fellowship from the UCI School of Education. Developed proficiency in Research Methods, Machine Learning, Data Science, Learning Analytics, and Game Development under the Design and Partnership Lab.",
-        "tag": "Advisors: June Ahn, PhD. and Fernando Rodriguez, PhD.",
+        "description": "Accepted into the inaugural cohort of the year-long fellowship from the UCI School of Education. <br><br>Developed proficiency in Research Methods, Machine Learning, Data Science, Learning Analytics, and Game Development under the Design and Partnership Lab.",
+        "tag": "Literature Review • Research Design • Technical Writing",
         "link": "https://sites.uci.edu/cpleads/"
     }
 }
