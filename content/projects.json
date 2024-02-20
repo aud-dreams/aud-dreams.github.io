@@ -1,30 +1,44 @@
 {
+    "Evergreen": {
+        "thumbnail": "../images/evergreen_thumbnail.png",
+        "title": "Evergreen",
+        "description": "EdTech platform that uses gamification and personalized learning paths to ensure mastery of core CS concepts.",
+        "tag": "Svelte • Unity • scikit-learn • FastAPI",
+        "link": "https://devpost.com/software/evergreen-13zy87"
+    },
+    "VitalVoice": {
+        "thumbnail": "../images/vitalvoice_thumbnail.jpg",
+        "title": "VitalVoice",
+        "description": "Healthcare communication platform to record, translate, & transcribe converstaions between patients & practitioners.",
+        "tag": "React Native • OpenAI • Cloud Translation API • Firebase",
+        "link": "https://devpost.com/software/vitalvoice"
+    },
     "Rheia": {
         "thumbnail": "../images/rheia_thumbnail.png",
         "title": "Rheia",
         "description": "Novel solution to STI early intervention and contact tracing with data-driven healthcare application.",
-        "tag": "Python • Scikit-learn • Flask",
+        "tag": "Svelte • scikit-learn • Flask",
         "link": "https://tinyurl.com/y3wd8h8p"
-    },
-    "Mischief in Montreal": {
-        "thumbnail": "../images/mischief_in_montreal_thumbnail.jpg",
-        "title": "Mischief in Montreal",
-        "description": "Utilized data analytics & machine learning to develop policies for Montreal criminal landscape.",
-        "tag": "Keras • Scikit-learn • TensorFlow",
-        "link": "https://devpost.com/software/mischief-in-montreal"
     },
     "skincare.io": {
         "thumbnail": "../images/skincare.io_thumbnail.png",
         "title": "skincare.io",
         "description": "Innovative solution to skincare recommendations; generates comprehensive routines based on user skin type & goals.",
-        "tag": "React • Puppeteer • PostgreSQL",
+        "tag": "React • Next.js • Puppeteer • PostgreSQL",
         "link": "https://devpost.com/software/skincare-io"
+    },
+    "Mischief in Montreal": {
+        "thumbnail": "../images/mischief_in_montreal_thumbnail.jpg",
+        "title": "Mischief in Montreal",
+        "description": "Data analytics and machine learning to develop research-backed policies for Montreal's criminal landscape.",
+        "tag": "Keras • scikit-learn • TensorFlow",
+        "link": "https://devpost.com/software/mischief-in-montreal"
     },
     "ZotHome": {
         "thumbnail": "../images/zothome_thumbnail.png",
         "title": "ZotHome",
-        "description": "Intuitive mobile app for ACC housing listings with filtering capabilities, map view, and up-to-date database.",
-        "tag": "React Native • CockroachDB • Vercel",
+        "description": "Mobile application to streamline leasing apartments around UCI with filtering capabilities, map view, and updates.",
+        "tag": "React Native • CockroachDB • Vercel • Mapbox API",
         "link": "https://devpost.com/software/zothome"
     },
     "Commutr Course": {
