@@ -9,7 +9,7 @@
     "SURP": {
         "thumbnail": "../images/phocrastination.png",
         "title": "Phocrastination: A Game-Based Approach to Assessing and Classifying Academic Procrastination in College Students",
-        "description": "Interdisciplinary and cross-institutional initiative to develop <i>Phocrastination</i>, a game-based assessment to assess procrastination in college students. <br><br>Implemented a rigorous learning analytics design process, developed the game on Unity, conducted a pilot study of 80 participants, and achieved predictive validity.",
+        "description": "Pioneered a year-long interdisciplinary research project to develop a game-based assessment to assess procrastination; performed game development on Unity, data collection for 100+ participants, and rigorous data analytics and predictive modeling with conducive results.",
         "tag": "scikit-Learn • Unity • C#",
         "link": "https://deepnote.com/@phocrastination/Phocrastination-A-Game-Based-Approach-to-Assessing-and-Classifying-Academic-Procrastination-in-College-Students-ed4c6348-2dd9-4c3d-a855-1ba17ef84ccb"
     },

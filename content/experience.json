@@ -1,13 +1,13 @@
 {
     "FA2": {
-        "thumbnail": "../images/fa_logo.jpg",
+        "thumbnail": "../images/fa_logo.png",
         "title": "First American",
         "description": "Building a data-driven segmentation tool with Databricks and Apache Superset to help five UX research teams filter and visualize candidates across dozens of features for faster interview and design decisions.<br><br>Built a scalable, end-to-end data mining pipeline on Databricks with Pyspark to generate features for machine learning use cases and transform First American data from silver to gold.",
         "tag": "Data Science Intern",
         "link": "https://www.firstam.com/"
     },
     "FA1": {
-        "thumbnail": "../images/fa_logo.jpg",
+        "thumbnail": "../images/fa_logo.png",
         "title": "First American",
         "description": "Built AWS-integrated UIs using Lambda, API Gateway, S3, & Bedrock, reducing workload per agent by 3 hours.<br><br>Spearheaded a machine learning project to predict title order closing dates; extracted and transformed 400k+ orders from Databricks using Spark SQL, developed models with Scikit-Learn, AWS Sagemaker, & Databricks AutoML. <br><br>Integrated feature flags with LaunchDarkly on a legacy API with C#, .NET, and Microsoft SQL Server.",
         "tag": "Backend Engineer Intern",
@@ -16,13 +16,13 @@
     "dll": {
         "thumbnail": "../images/dll_logo.png",
         "title": "Digital Learning Lab",
-        "description": "Collaborated with NSF initiative to develop intelligent writing coach used in pilot study of 100+ engineering students. Applied fine-tuning, retrieval-augmented generation, and automated scoring with OpenAI and Python",
+        "description": "Collaborated with NSF initiative to develop intelligent writing coach used in pilot study of 100+ engineering students. Applied fine-tuning, retrieval-augmented generation, and automated scoring with OpenAI and Python.",
         "tag": "Artificial Intelligence Research Assistant",
         "link": "https://www.digitallearninglab.org/"
     },"daplab": {
         "thumbnail": "../images/daplab_logo.png",
         "title": "Design and Partnership Lab",
-        "description": "Collaborated with Chan-Zuckerberg initiative to develop AI dashboard evaluating student performance through LLMs; used prompt engineering techniques (e.g. few-shot, chain-of-thought) to assess ~500 responses up to 75% accuracy. <br><br>Pioneered a year-long interdisciplinary research project to develop a game-based assessment to assess procrastination; performed game development in Unity with C# and Vercel, data collection on Firebase for 100+ participants, data science and predictive modeling with Scikit-Learn.",
+        "description": "Collaborated with Chan-Zuckerberg initiative to develop AI dashboard evaluating student performance through LLMs; used prompt engineering techniques (e.g. few-shot, chain-of-thought) to assess ~500 responses up to 75% accuracy. <br><br>Presented at 8 national conferences (e.g. SCCUR, NCUR) for audiences of 50+ professionals and researchers.",
         "tag": "Artificial Intelligence Research Assistant",
         "link": "https://www.daplab.education.uci.edu/"
     },
