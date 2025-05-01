@@ -1,9 +1,16 @@
 {
-    "University of California, Irvine": {
+    "Masters": {
         "thumbnail": "../images/uci_thumbnail.jpg",
         "title": "University of California, Irvine",
-        "description": "Relevant Coursework: Machine Learning and Data-Mining, Design & Analysis of Algorithms, Intro to Artificial Intelligence, Data Structure Implementation & Analysis, Intro to Data Management, Discrete Mathematics, Linear Algebra",
-        "tag": "Bachelor of Computer Science",
+        "description": "Relevant Coursework: Neural Networks & Deep Learning, Transaction Processing and Distributed Data Management, Distributed Computer Systems, Data Structures, Light and Geometry in Computer Vision",
+        "tag": "Master of Science in Computer Science",
+        "link": "https://ics.uci.edu/"
+    },
+    "Bachelors": {
+        "thumbnail": "../images/uci_thumbnail.jpg",
+        "title": "University of California, Irvine",
+        "description": "Relevant Coursework: Design & Analysis of Algorithms, Algorithms for Probabilistic and Deterministic Graphical Models, Machine Learning and Data Mining, System Design, Beyond SQL Data Management, Discrete Mathematics",
+        "tag": "Bachelor of Science in Computer Science",
         "link": "https://ics.uci.edu/"
     },
     "FVHS": {

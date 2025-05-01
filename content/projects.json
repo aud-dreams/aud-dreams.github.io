@@ -1,4 +1,11 @@
 {
+    "Haven": {
+        "thumbnail": "../images/haven_thumbnail.png",
+        "title": "Haven",
+        "description": "Mobile app to identify safe locations for women through scoring algorithm and user reviews, with real-time location data and heatmap of 900k reported crimes.",
+        "tag": "React • Mapbox • PostgreSQL",
+        "link": "https://devpost.com/software/haven-4pkl5f"
+    },
     "Semantic Segmentation": {
         "thumbnail": "../images/semantic_thumbnail.png",
         "title": "Electrifying Settlements with Semantic Segmentation",
